@@ -1,4 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base{
+    :root{
+        /* primary colors */
+
+        --accent-1: hsl(0, 100%, 67%);
+        --accent-2: hsl(39, 100%, 56%);
+        --accent-3: hsl(166, 100%, 37%);
+        --accent-4: hsl(234, 85%, 45%);
+
+        /* card transparent color */
+        --bg-red: hsl(0, 100%, 67%,0.1);
+        --bg-yellow: hsl(39, 100%, 56%,0.1);
+        --bg-teal: hsl(166, 100%, 37%,0.1);
+        --bg-blue: hsl(234, 85%, 45%,0.1);
+
+        /* neutral color */
+        --clr-white: hsl(0, 0%, 100%);
+        --clr-blue: hsl(221, 100%, 96%);
+        --clr-lavender: hsl(241, 100%, 89%);
+        --clr-dark-gray: hsl(224, 30%, 27%);
+
+    }
+
+    body{
+        background-color: var(--clr-white);
+        font-family: 'Hanken Grotesk', sans-serif;
+    }
+}
+/*  */
+.gradient-to-transparent{
+    background: linear-gradient(hsla(256, 72%, 46%),hsl(241, 72%, 46%,0));
+}
+
+/* primary */
+.gradient-primary {
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+button:hover,
+button:focus-visible{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
